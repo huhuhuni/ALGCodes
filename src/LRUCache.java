@@ -67,7 +67,6 @@ public class LRUCache {
             head.next.prev = node;
             head.next = node;
         }
-
         private void removeNode(DLinkedNode node) {
             node.prev.next = node.next;
             node.next.prev = node.prev;
@@ -77,7 +76,7 @@ public class LRUCache {
             removeNode(node);
             addToHead(node);
         }
-
+        // 从链表删除
         private DLinkedNode removeTail() {
             DLinkedNode res = tail.prev;
             removeNode(res);
