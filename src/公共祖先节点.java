@@ -15,4 +15,3 @@ class TreeNode {
       TreeNode right;
       TreeNode(int x) { val = x; }
   }
-
